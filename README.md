@@ -3,7 +3,9 @@
 [![npm downloads](https://img.shields.io/npm/dm/espree.svg)](https://www.npmjs.com/package/espree)
 [![Bountysource](https://www.bountysource.com/badge/tracker?tracker_id=9348450)](https://www.bountysource.com/trackers/9348450-eslint?utm_source=9348450&utm_medium=shield&utm_campaign=TRACKER_BADGE)
 
-# Espree
+# Espree-attachComemnt
+
+**A fork of Espree with `attachComment` support.**
 
 Espree started out as a fork of [Esprima](http://esprima.org) v1.2.2, the last stable published released of Esprima before work on ECMAScript 6 began. Espree is now built on top of [Acorn](https://github.com/ternjs/acorn), which has a modular architecture that allows extension of core functionality. The goal of Espree is to produce output that is similar to Esprima with a similar API so that it can be used in place of Esprima.
 
@@ -37,7 +39,7 @@ const ast = espree.parse(code);
 
 `parse` parses the given code and returns a abstract syntax tree (AST). It takes two parameters.
 
-- `code` [string]() - the code which needs to be parsed. 
+- `code` [string]() - the code which needs to be parsed.
 - `options (Optional)` [Object]() - read more about this [here](#options).
 
 ```js
@@ -81,7 +83,7 @@ Node {
 
 `tokenize` returns the tokens of a given code. It takes two parameters.
 
-- `code` [string]() - the code which needs to be parsed. 
+- `code` [string]() - the code which needs to be parsed.
 - `options (Optional)` [Object]() - read more about this [here](#options).
 
 Even if `options` is empty or undefined or `options.tokens` is `false`, it assigns it to `true` in order to get the `tokens` array
@@ -124,7 +126,7 @@ Returns the latest ECMAScript supported by `espree`
 
 Returns an array of all supported ECMAScript versions
 
-## Options 
+## Options
 
 ```js
 const options = {

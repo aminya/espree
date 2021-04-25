@@ -1,8 +1,8 @@
 {
-  "name": "espree",
+  "name": "espree-attachcomment",
   "description": "An Esprima-compatible JavaScript parser built on Acorn",
   "author": "Nicholas C. Zakas <nicholas+npm@nczconsulting.com>",
-  "homepage": "https://github.com/eslint/espree",
+  "homepage": "https://github.com/aminya/espree-attachcomment",
   "main": "dist/espree.cjs",
   "type": "module",
   "exports": {
@@ -27,7 +27,7 @@
   },
   "repository": "eslint/espree",
   "bugs": {
-    "url": "http://github.com/eslint/espree.git"
+    "url": "http://github.com/aminya/espree-attachcommen.git"
   },
   "license": "BSD-2-Clause",
   "dependencies": {
